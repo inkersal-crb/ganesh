@@ -503,3 +503,27 @@
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   background-color:var(--bs-primary); 
 }
+.floating-whatsapp{
+  position: fixed;
+  bottom: 5rem;
+  right: 30px;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  z-index: 99;
+}
+.floating-whatsapp span{
+  display: none;
+  white-space: nowrap;
+}
+.floating-whatsapp:hover {
+  width: 200px; 
+  border-radius: 33px !important;
+}
+.floating-whatsapp:hover span{  
+  display: block;
+  transition: .5s ease;
+}
