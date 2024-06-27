@@ -22,7 +22,7 @@
             }
         } else {
             if ($(this).scrollTop() > 55) {
-                $('.fixed-top').addClass('shadow').css('top', -55);
+                $('.fixed-top').addClass('shadow').css('top', 0);
             } else {
                 $('.fixed-top').removeClass('shadow').css('top', 0);
             }
@@ -39,7 +39,7 @@
     }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 1000, 'easeInOutExpo');
         return false;
     });
 
@@ -146,6 +146,8 @@
         }
         button.parent().parent().find('input').val(newVal);
     });
+    
+    
 
 })(jQuery);
 
